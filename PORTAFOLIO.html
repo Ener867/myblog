@@ -6,7 +6,7 @@
     <title>Portafolio | TuNombre</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-/* Reset y Variables */
+
 :root {
     --primary-color: #2563eb;
     --primary-dark: #1d4ed8;
@@ -33,7 +33,6 @@
     --box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +41,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity; /* Cambiado de mandatory a proximity */
+    scroll-snap-type: y proximity; 
 }
 
 body {
@@ -62,7 +61,7 @@ body {
 
 section {
     padding: 80px 0;
-    min-height: 100vh; /* Asegura que cada sección ocupe al menos el 100% del viewport */
+    min-height: 100vh; 
     scroll-snap-align: start;
     box-sizing: border-box;
     display: flex;
@@ -174,7 +173,6 @@ img {
     border-radius: 2px;
 }
 
-/* Navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -281,7 +279,6 @@ img {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     padding-top: 80px;
     min-height: 100vh;
@@ -493,7 +490,6 @@ img {
     background-color: var(--light-secondary);
 }
 
-/* Skills Section */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -556,7 +552,6 @@ img {
     transition: width 1.5s ease;
 }
 
-/* Contact Section */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -647,16 +642,15 @@ img {
     gap: 10px;
 }
 
-/* Footer */
 .footer {
     background-color: var(--dark-color);
-    color: var(--light-color); /* Cambiado de white a var(--light-color) */
+    color: var(--light-color); 
     padding: 60px 0 0;
 }
 
 [data-theme="dark"] .footer {
     background-color: var(--dark-secondary);
-    color: var(--dark-color); /* Asegura que el texto sea legible en modo oscuro */
+    color: var(--dark-color); 
 }
 
 .footer-content {
@@ -667,7 +661,7 @@ img {
 }
 
 .footer-logo .logo {
-    color: var(--light-color); /* Cambiado de white a var(--light-color) */
+    color: var(--light-color); 
     margin-bottom: 20px;
     font-size: 1.5rem;
 }
@@ -677,11 +671,11 @@ img {
 }
 
 [data-theme="dark"] .footer-logo p {
-    color: var(--gray-color); /* Mejor contraste en modo oscuro */
+    color: var(--gray-color); 
 }
 
 .footer-links h4 {
-    color: var(--light-color); /* Cambiado de white a var(--light-color) */
+    color: var(--light-color); 
     margin-bottom: 20px;
     font-size: 1.2rem;
     position: relative;
@@ -708,11 +702,11 @@ img {
 }
 
 [data-theme="dark"] .footer-links ul li a {
-    color: var(--gray-color); /* Mejor contraste en modo oscuro */
+    color: var(--gray-color); 
 }
 
 .footer-links ul li a:hover {
-    color: var(--light-color); /* Cambiado de white a var(--light-color) */
+    color: var(--light-color); 
     padding-left: 5px;
 }
 
@@ -732,7 +726,7 @@ img {
 }
 
 [data-theme="dark"] .footer-bottom p {
-    color: var(--gray-color); /* Mejor contraste en modo oscuro */
+    color: var(--gray-color); 
 }
 
 .legal-links {
@@ -746,14 +740,13 @@ img {
 }
 
 [data-theme="dark"] .legal-links a {
-    color: var(--gray-color); /* Mejor contraste en modo oscuro */
+    color: var(--gray-color); 
 }
 
 .legal-links a:hover {
-    color: var(--light-color); /* Cambiado de white a var(--light-color) */
+    color: var(--light-color); 
 }
 
-/* Back to Top Button */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -784,7 +777,6 @@ img {
     transform: translateY(-5px);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -805,7 +797,6 @@ img {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
     .hero .container {
         grid-template-columns: 1fr;
@@ -890,7 +881,6 @@ img {
     </style>
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">ENER<span>VASQUEZ</span></a>
@@ -911,7 +901,6 @@ img {
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="about" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -943,7 +932,6 @@ img {
         </div>
     </section>
 
-    <!-- Proyectos Destacados -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-header">
@@ -1124,7 +1112,6 @@ img {
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
@@ -1261,7 +1248,6 @@ img {
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -1315,7 +1301,6 @@ img {
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -1352,17 +1337,14 @@ img {
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <a href="#" class="back-to-top" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <script>
-    // Configuración del tema
 const themeToggle = document.querySelector('.theme-toggle');
 const body = document.body;
 
-// Comprobar preferencia del usuario
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 const currentTheme = localStorage.getItem('theme');
 
@@ -1370,7 +1352,6 @@ if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
     body.setAttribute('data-theme', 'dark');
 }
 
-// Alternar tema
 themeToggle.addEventListener('click', () => {
     const currentTheme = body.getAttribute('data-theme');
     if (currentTheme === 'dark') {
@@ -1382,7 +1363,6 @@ themeToggle.addEventListener('click', () => {
     }
 });
 
-// Menú móvil
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -1391,7 +1371,6 @@ menuToggle.addEventListener('click', () => {
     menuToggle.querySelector('i').classList.toggle('fa-times');
 });
 
-// Cerrar menú al hacer clic en un enlace
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
@@ -1399,13 +1378,11 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Efecto de scroll en navbar
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-// Botón volver arriba
 const backToTopBtn = document.querySelector('.back-to-top');
 
 window.addEventListener('scroll', () => {
@@ -1420,7 +1397,6 @@ backToTopBtn.addEventListener('click', (e) => {
     });
 });
 
-// Animación de barras de habilidades
 const skillBars = document.querySelectorAll('.skill-progress');
 
 function animateSkillBars() {
@@ -1430,7 +1406,6 @@ function animateSkillBars() {
     });
 }
 
-// Observer para animaciones al hacer scroll
 const observerOptions = {
     threshold: 0.1
 };
@@ -1450,7 +1425,6 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Efecto máquina de escribir
 const typewriterElement = document.querySelector('.typewriter');
 const professions = ['Full Stack Developer', 'UI/UX Designer', 'Frontend Expert', 'Backend Specialist'];
 let currentProfession = 0;
@@ -1473,23 +1447,21 @@ function typeWriter() {
     
     if (!isDeleting && charIndex === currentText.length) {
         isDeleting = true;
-        typingSpeed = 1500; // Pausa al final
+        typingSpeed = 1500; 
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         currentProfession = (currentProfession + 1) % professions.length;
-        typingSpeed = 500; // Pausa antes de empezar de nuevo
+        typingSpeed = 500; 
     }
     
     setTimeout(typeWriter, typingSpeed);
 }
 
-// Iniciar efecto después de 1 segundo
+
 setTimeout(typeWriter, 1000);
 
-// Año actual en el footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Manejo del formulario
 const contactForm = document.querySelector('.contact-form form');
 
 contactForm.addEventListener('submit', async (e) => {
